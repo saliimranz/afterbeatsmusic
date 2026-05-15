@@ -85,11 +85,12 @@ ul, ol { list-style: none; }
   pointer-events: none;
 }
 .loader-logo {
-  font-family: var(--font);
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  color: var(--white-soft);
+  display: block;
+  width: 180px;
+  height: 86px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
   animation: loaderPulse 1.4s ease-in-out infinite;
 }
 @keyframes loaderPulse {
@@ -174,7 +175,6 @@ ul, ol { list-style: none; }
 .nav-brand {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -183,21 +183,15 @@ ul, ol { list-style: none; }
   justify-self: start;            /* anchor to the left edge of its grid cell */
   padding: 6px 4px 6px 0;
 }
-.nav-brand-mark {
-  width: 24px;
-  height: 24px;
-  display: grid;
-  place-items: center;
-  color: var(--white-soft);
+.nav-brand-logo {
+  display: block;
+  width: 116px;
+  height: 44px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
   flex-shrink: 0;
 }
-.nav-brand-mark svg { width: 100%; height: 100%; }
-.nav-brand-text {
-  font-size: 14.5px;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-}
-
 /* Center + right link groups. Centering is now handled by the parent grid;
    we just align ourselves inside our own grid cell. */
 .nav-center {
@@ -508,29 +502,17 @@ ul, ol { list-style: none; }
 .hero-logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   margin-bottom: 36px;
   color: var(--white-soft);
 }
-.hero-logo-mark {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: var(--white);
+.hero-logo-img {
+  display: block;
+  width: 180px;
+  height: 86px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
 }
-.hero-logo-mark svg { width: 22px; height: 22px; }
-.hero-logo-text {
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
 .hero-headline {
   font-size: clamp(2.4rem, 6.2vw, 5.6rem);
   font-weight: 600;
@@ -1382,16 +1364,18 @@ ul, ol { list-style: none; }
   z-index: 2;
 }
 .demo-brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 96px;
-  height: 96px;
+  display: block;
+  width: 184px;
+  height: 88px;
   margin-bottom: 28px;
-  color: var(--white);
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
   /* Slow breath so it feels alive */
   animation: demoMarkBreath 5.5s var(--ease-std) infinite;
 }
-.demo-brand-mark svg { width: 100%; height: 100%; }
 @keyframes demoMarkBreath {
   0%, 100% { transform: scale(1);    opacity: 1;    }
   50%      { transform: scale(1.04); opacity: 0.92; }
@@ -1443,13 +1427,14 @@ ul, ol { list-style: none; }
   margin-bottom: 10px;
 }
 .demo-card-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 26px;
-  height: 26px;
-  color: var(--white);
+  display: block;
+  width: 58px;
+  height: 28px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+  flex-shrink: 0;
 }
-.demo-card-mark svg { width: 100%; height: 100%; }
 .demo-card-title {
   font-size: clamp(1.4rem, 2.4vw, 1.9rem);
   font-weight: 700;
@@ -1723,7 +1708,7 @@ ul, ol { list-style: none; }
 @media (max-width: 767px) {
   .demo-section { padding: 90px 16px 110px; }
   .demo-header { margin-bottom: 48px; }
-  .demo-brand-mark { width: 72px; height: 72px; margin-bottom: 22px; }
+  .demo-brand-mark { width: 150px; height: 72px; margin-bottom: 22px; }
   .demo-card { padding: 36px 24px 32px; border-radius: 20px; }
   .form-row { grid-template-columns: 1fr; gap: 22px; }
   .demo-form { gap: 20px; }
@@ -1803,7 +1788,7 @@ ul, ol { list-style: none; }
 /* Team avatars — photo on top, original gradient kept as fallback under it
    so a 404 / decoding error degrades to the previous colored circle rather
    than a broken-image icon. background-size: cover + 50% radius (from the
-   parent .team-avatar / .mt-avatar / .article-author-av rules) crops every
+   parent .team-avatar / .mt-avatar rules) crops every
    source square to a circle from its centre regardless of aspect ratio. */
 .ta-1, .ta-2, .ta-3, .ta-4, .ta-5,
 .ta-6, .ta-7, .ta-8, .ta-9 {
@@ -1886,21 +1871,15 @@ ul, ol { list-style: none; }
 .footer-logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   color: var(--white);
 }
-.footer-logo-mark {
-  width: 28px;
-  height: 28px;
-  display: grid;
-  place-items: center;
-}
-.footer-logo-mark svg { width: 100%; height: 100%; }
-.footer-logo-text {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--white);
+.footer-logo-img {
+  display: block;
+  width: 150px;
+  height: 72px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
 }
 .footer-address {
   font-style: normal;
@@ -1991,13 +1970,13 @@ ul, ol { list-style: none; }
 .footer-decor-mark {
   width: clamp(120px, 18vw, 220px);
   height: clamp(120px, 18vw, 220px);
-  color: rgba(255, 255, 255, 0.92);
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
   opacity: 0.95;
-  display: grid;
-  place-items: center;
+  display: block;
   animation: footerMarkBreath 6s var(--ease-std) infinite;
 }
-.footer-decor-mark svg { width: 100%; height: 100%; }
 @keyframes footerMarkBreath {
   0%, 100% { transform: scale(1);    opacity: 0.92; }
   50%      { transform: scale(1.04); opacity: 0.78; }
@@ -2406,12 +2385,15 @@ ul, ol { list-style: none; }
   position: relative;
   overflow: hidden;
 }
-.article-thumb-bg {
+.article-thumb-img {
+  display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
   transition: transform 0.5s var(--ease-out);
 }
-.article-card:hover .article-thumb-bg { transform: scale(1.05); }
+.article-card:hover .article-thumb-img { transform: scale(1.05); }
 .article-thumb-featured {
   position: absolute;
   top: 12px;
@@ -2454,18 +2436,16 @@ ul, ol { list-style: none; }
   align-items: center;
   gap: 10px;
 }
-.article-author-av {
+.article-author-logo {
+  display: block;
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: var(--black-soft);
   border: 1px solid var(--border-subtle);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
-  font-weight: 600;
-  color: var(--white-dim);
+  background: var(--black-soft);
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
   flex-shrink: 0;
 }
 .article-author-name {
@@ -2479,19 +2459,6 @@ ul, ol { list-style: none; }
   margin-left: auto;
   white-space: nowrap;
 }
-/* Article thumb colors */
-.at-c1  { background: linear-gradient(160deg,#0d0d20,#1a1a40); }
-.at-c2  { background: linear-gradient(160deg,#150505,#3d1010); }
-.at-c3  { background: linear-gradient(160deg,#051505,#0d3d15); }
-.at-c4  { background: linear-gradient(160deg,#100d20,#2a2060); }
-.at-c5  { background: linear-gradient(160deg,#150010,#4d0040); }
-.at-c6  { background: linear-gradient(160deg,#150d00,#4d3000); }
-.at-c7  { background: linear-gradient(160deg,#001515,#004040); }
-.at-c8  { background: linear-gradient(160deg,#0d1520,#204060); }
-.at-c9  { background: linear-gradient(160deg,#150515,#3d103d); }
-.at-c10 { background: linear-gradient(160deg,#051015,#153040); }
-.at-c11 { background: linear-gradient(160deg,#100508,#3d1020); }
-.at-c12 { background: linear-gradient(160deg,#050d10,#10283d); }
 /* Pagination */
 .articles-pagination {
   display: flex;
@@ -2570,7 +2537,7 @@ ul, ol { list-style: none; }
   .master-nav { top: 0; padding: 0; }
   .nav-pill { height: 56px; border-radius: 0 0 20px 20px; padding: 0 12px 0 16px; width: calc(100% - 20px); }
   .hero-partners { width: calc(100% - 20px); padding: 18px 4px 28px; }
-  .nav-brand-text { font-size: 13px; }
+  .nav-brand-logo { width: 104px; height: 40px; }
   .container { padding: 0 20px; }
   .section { padding: 72px 0; }
   .channels-grid { grid-template-columns: repeat(2, 1fr); }
@@ -3027,14 +2994,14 @@ ul, ol { list-style: none; }
   animation: hofPillReveal 0.8s var(--ease-out) 0.45s forwards;
 }
 .hsp-mark {
-  width: 28px;
+  width: 62px;
   height: 28px;
-  display: grid;
-  place-items: center;
-  color: var(--white);
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
   flex-shrink: 0;
 }
-.hsp-mark svg { width: 100%; height: 100%; }
 .hsp-divider {
   width: 1px;
   height: 22px;
@@ -3059,7 +3026,7 @@ ul, ol { list-style: none; }
 }
 @media (max-width: 600px) {
   .hof-stats-pill { gap: 12px; padding: 12px 18px 12px 14px; bottom: 24px; }
-  .hsp-mark { width: 22px; height: 22px; }
+  .hsp-mark { width: 50px; height: 24px; }
   .hsp-divider { height: 18px; }
   .hsp-title, .hsp-views { font-size: 12.5px; }
 }
