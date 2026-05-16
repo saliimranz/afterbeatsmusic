@@ -5,61 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Articles &amp; Artist Spotlights — afterbeatsmusic</title>
   <meta name="description" content="Music news, artist spotlights, and industry updates from afterbeatsmusic." />
-  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap" rel="stylesheet" />
+  <link rel="canonical" href="https://afterbeatsmusic.com/articles.html" />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="icon" type="image/png" sizes="500x500" href="assets/logo/half.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/logo/half.png" />
+  <link rel="apple-touch-icon" sizes="500x500" href="assets/logo/half.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="After Beats" />
+  <meta property="og:title" content="Articles &amp; Artist Spotlights — afterbeatsmusic" />
+  <meta property="og:description" content="Music news, artist spotlights, and industry updates from afterbeatsmusic." />
+  <meta property="og:url" content="https://afterbeatsmusic.com/articles.html" />
+  <meta property="og:image" content="https://afterbeatsmusic.com/assets/logo/1.png" />
+  <meta property="og:image:secure_url" content="https://afterbeatsmusic.com/assets/logo/1.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="1000" />
+  <meta property="og:image:alt" content="After Beats logo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Articles &amp; Artist Spotlights — afterbeatsmusic" />
+  <meta name="twitter:description" content="Music news, artist spotlights, and industry updates from afterbeatsmusic." />
+  <meta name="twitter:image" content="https://afterbeatsmusic.com/assets/logo/1.png" />
+  <meta name="twitter:image:alt" content="After Beats logo" />
+
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
   <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
 
   <!-- Page Loader -->
   <div class="page-loader" id="pageLoader">
-    <span class="loader-logo">afterbeatsmusic</span>
+    <img class="loader-logo" src="assets/logo/half.png" alt="After Beats" width="500" height="500" decoding="async">
   </div>
 
   <!-- Barba overlay -->
   <div class="barba-overlay" id="barbaOverlay"></div>
 
   <!-- ══ NAVIGATION ══════════════════════════════════════ -->
-  <nav class="master-nav scrolled" id="masterNav" role="navigation">
-    <div class="nav-container">
-      <a href="index.html" class="nav-brand">afterbeatsmusic</a>
-      <div class="nav-links">
+  <!-- ══ NAVIGATION (Liquid-glass flush-top, rounded-bottom) ═══ -->
+  <nav class="master-nav" id="masterNav" role="navigation">
+    <div class="nav-pill">
+      <a href="index.html" class="nav-brand">
+        <img class="nav-brand-logo" src="assets/logo/half.png" alt="After Beats" width="500" height="500" decoding="async">
+      </a>
+
+      <div class="nav-center">
+        <a href="hall-of-fame.html" class="nav-link" data-barba-update>Hall of Fame</a>
+
         <div class="nav-dd-wrap">
-          <button class="nav-dd-btn" aria-expanded="false">
+          <button class="nav-dd-btn nav-link" aria-expanded="false" aria-haspopup="true">
             Channels
             <svg class="nav-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
-          <div class="nav-dd-menu">
+          <div class="nav-dd-menu" role="menu">
             <div>
               <span class="nav-dd-col-label">National</span>
               <a href="#" class="nav-dd-item">afterbeatsmusic</a>
               <a href="#" class="nav-dd-item">USA</a><a href="#" class="nav-dd-item">Canada</a>
-              <a href="#" class="nav-dd-item">UK</a><a href="#" class="nav-dd-item">Indonesia</a>
-              <a href="#" class="nav-dd-item">Poland</a><a href="#" class="nav-dd-item">Argentina</a>
-              <a href="#" class="nav-dd-item">Sweden</a><a href="#" class="nav-dd-item">Mexico</a>
-              <a href="#" class="nav-dd-item">Australia</a><a href="#" class="nav-dd-item">Germany</a>
-              <a href="#" class="nav-dd-item">France</a><a href="#" class="nav-dd-item">Brazil</a>
-              <a href="#" class="nav-dd-item">Italy</a><a href="#" class="nav-dd-item">Philippines</a>
-              <a href="#" class="nav-dd-item">Hindi</a>
-            </div>
-            <div>
-              <span class="nav-dd-col-label">Genres</span>
-              <a href="#" class="nav-dd-item">K-Pop</a><a href="#" class="nav-dd-item">Afro House</a>
-              <a href="#" class="nav-dd-item">Acoustic</a><a href="#" class="nav-dd-item">Indie</a>
-              <a href="#" class="nav-dd-item">Tech House</a><a href="#" class="nav-dd-item">Trance</a>
-              <a href="#" class="nav-dd-item">Tropical</a><a href="#" class="nav-dd-item">Lo-fi</a>
-              <a href="#" class="nav-dd-item">Techno</a><a href="#" class="nav-dd-item">Trap</a>
-              <a href="#" class="nav-dd-item">Drum &amp; Bass</a><a href="#" class="nav-dd-item">Phonk</a>
-              <a href="#" class="nav-dd-item">Afrobeats</a><a href="#" class="nav-dd-item">R&amp;B</a>
-              <a href="#" class="nav-dd-item">Country</a><a href="#" class="nav-dd-item">Rap</a>
-              <a href="#" class="nav-dd-item">Latin</a><a href="#" class="nav-dd-item">Chill</a>
-              <a href="#" class="nav-dd-item">Rock</a>
             </div>
           </div>
         </div>
-        <a href="contact.html" class="nav-link">Contact</a>
-        <a href="hall-of-fame.html" class="nav-link">Hall of Fame</a>
+
+        <a href="articles.html" class="nav-link" aria-current="page">Articles</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="contact.html" class="nav-link" data-barba-update>Contact</a>
         <a href="index.html#submit" class="nav-link nav-link-cta">Submit Demo</a>
       </div>
+
       <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span class="ham-line"></span><span class="ham-line"></span><span class="ham-line"></span>
       </button>
@@ -69,16 +91,14 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <div class="mobile-nav-links">
-      <a href="contact.html" class="mobile-nav-link">Contact</a>
       <a href="hall-of-fame.html" class="mobile-nav-link">Hall of Fame</a>
+      <a href="articles.html" class="mobile-nav-link">Articles</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
       <a href="index.html#submit" class="mobile-nav-cta">Submit Demo</a>
     </div>
     <div class="mobile-channels-label">Channels</div>
     <div class="mobile-channels-grid">
       <a href="#">afterbeatsmusic</a><a href="#">USA</a><a href="#">UK</a>
-      <a href="#">Canada</a><a href="#">Brazil</a><a href="#">Australia</a>
-      <a href="#">K-Pop</a><a href="#">Lo-fi</a><a href="#">Trap</a>
-      <a href="#">Afrobeats</a><a href="#">R&amp;B</a><a href="#">Phonk</a>
     </div>
   </div>
 
@@ -108,14 +128,14 @@
         <!-- Article 1 — Featured -->
         <div class="article-card" data-animate-fade-in data-delay="1" data-date="2026-01-01">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c1"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (1).jpg" alt="MTV international music channels article thumbnail" loading="lazy" decoding="async">
             <span class="article-thumb-featured">Featured</span>
           </div>
           <div class="article-body">
             <p class="article-cat">Industry News</p>
             <h2 class="article-title">MTV Shuts Down International Music Channels After 40 Years</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-1">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Jan 1, 2026</span>
             </div>
@@ -125,14 +145,14 @@
         <!-- Article 2 — Featured -->
         <div class="article-card" data-animate-fade-in data-delay="2" data-date="2025-12-21">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c2"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (2).jpg" alt="James Hetfield spoken word article thumbnail" loading="lazy" decoding="async">
             <span class="article-thumb-featured">Featured</span>
           </div>
           <div class="article-body">
             <p class="article-cat">Artist Spotlight</p>
             <h2 class="article-title">Metallica's James Hetfield Unveils Spoken Word Rendition of Classic Songs</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-2">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Dec 21, 2025</span>
             </div>
@@ -142,14 +162,14 @@
         <!-- Article 3 — Featured -->
         <div class="article-card" data-animate-fade-in data-delay="3" data-date="2025-11-11">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c3"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (3).jpg" alt="Afterbeatsmusic subscriber milestone article thumbnail" loading="lazy" decoding="async">
             <span class="article-thumb-featured">Featured</span>
           </div>
           <div class="article-body">
             <p class="article-cat">Milestone</p>
             <h2 class="article-title">afterbeatsmusic Celebrates Reaching Over 30 Million Subscribers</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-3">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Nov 11, 2025</span>
             </div>
@@ -159,13 +179,13 @@
         <!-- Article 4 -->
         <div class="article-card" data-animate-fade-in data-delay="1" data-date="2025-10-28">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c4"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (4).jpg" alt="BTS comeback article thumbnail" loading="lazy" decoding="async">
           </div>
           <div class="article-body">
             <p class="article-cat">Artist Spotlight</p>
             <h2 class="article-title">BTS Reclaims Global Pop Supremacy with Record-Breaking Comeback</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-4">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Oct 28, 2025</span>
             </div>
@@ -175,13 +195,13 @@
         <!-- Article 5 -->
         <div class="article-card" data-animate-fade-in data-delay="2" data-date="2025-10-15">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c5"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (5).jpg" alt="Spotify artist revenue sharing article thumbnail" loading="lazy" decoding="async">
           </div>
           <div class="article-body">
             <p class="article-cat">Industry</p>
             <h2 class="article-title">Spotify Announces New Artist Revenue Sharing Model for Independent Labels</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-5">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Oct 15, 2025</span>
             </div>
@@ -191,13 +211,13 @@
         <!-- Article 6 -->
         <div class="article-card" data-animate-fade-in data-delay="3" data-date="2025-09-30">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c6"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (6).jpg" alt="Global music revenue streaming article thumbnail" loading="lazy" decoding="async">
           </div>
           <div class="article-body">
             <p class="article-cat">Music Revenue</p>
             <h2 class="article-title">Global Music Revenue Hits Record $32 Billion: How Streaming Changed Everything</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-6">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Sep 30, 2025</span>
             </div>
@@ -207,13 +227,13 @@
         <!-- Article 7 -->
         <div class="article-card" data-animate-fade-in data-delay="1" data-date="2025-09-12">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c7"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (7).jpg" alt="The Winners September 2025 article thumbnail" loading="lazy" decoding="async">
           </div>
           <div class="article-body">
             <p class="article-cat">Curation</p>
             <h2 class="article-title">afterbeatsmusic's The Winners — September 2025 Edition</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-7">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Sep 12, 2025</span>
             </div>
@@ -223,13 +243,13 @@
         <!-- Article 8 -->
         <div class="article-card" data-animate-fade-in data-delay="2" data-date="2025-08-25">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c8"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (8).jpg" alt="Afterbeatsmusic viral hits summer article thumbnail" loading="lazy" decoding="async">
           </div>
           <div class="article-body">
             <p class="article-cat">Viral Hits</p>
             <h2 class="article-title">afterbeatsmusic Viral Hits: The Tracks That Took Over This Summer</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-8">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Aug 25, 2025</span>
             </div>
@@ -239,13 +259,13 @@
         <!-- Article 9 -->
         <div class="article-card" data-animate-fade-in data-delay="3" data-date="2025-08-10">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c9"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (9).jpg" alt="Independent artists seven-figure careers article thumbnail" loading="lazy" decoding="async">
           </div>
           <div class="article-body">
             <p class="article-cat">Artist Spotlight</p>
             <h2 class="article-title">How Independent Artists Are Building 7-Figure Careers Without a Label</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-9">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Aug 10, 2025</span>
             </div>
@@ -255,13 +275,13 @@
         <!-- Article 10 -->
         <div class="article-card" data-animate-fade-in data-delay="1" data-date="2025-07-22">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c10"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (10).jpg" alt="The Winners July 2025 best new releases article thumbnail" loading="lazy" decoding="async">
           </div>
           <div class="article-body">
             <p class="article-cat">Curation</p>
             <h2 class="article-title">afterbeatsmusic's The Winners — July 2025: Best New Releases</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-1">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Jul 22, 2025</span>
             </div>
@@ -271,13 +291,13 @@
         <!-- Article 11 -->
         <div class="article-card" data-animate-fade-in data-delay="2" data-date="2025-07-05">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c11"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (11).jpg" alt="AI in music production article thumbnail" loading="lazy" decoding="async">
           </div>
           <div class="article-body">
             <p class="article-cat">Industry News</p>
             <h2 class="article-title">The Rise of AI in Music Production: Threat or Creative Tool?</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-2">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Jul 5, 2025</span>
             </div>
@@ -287,13 +307,13 @@
         <!-- Article 12 -->
         <div class="article-card" data-animate-fade-in data-delay="3" data-date="2025-06-18">
           <div class="article-thumb">
-            <div class="article-thumb-bg at-c12"></div>
+            <img class="article-thumb-img" src="assets/25Pics/1 (12).jpg" alt="Lo-fi hip-hop deep dive article thumbnail" loading="lazy" decoding="async">
           </div>
           <div class="article-body">
             <p class="article-cat">Deep Dive</p>
             <h2 class="article-title">Lo-fi Hip-Hop: From Internet Niche to a Billion Dollar Genre</h2>
             <div class="article-meta">
-              <div class="article-author-av ta-3">AB</div>
+              <img class="article-author-logo" src="assets/logo/half.png" alt="After Beats" loading="lazy" decoding="async">
               <span class="article-author-name">afterbeatsmusic</span>
               <span class="article-date">Jun 18, 2025</span>
             </div>
@@ -318,9 +338,11 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="index.html" class="footer-logo">afterbeatsmusic</a>
+          <a href="index.html" class="footer-logo">
+            <img class="footer-logo-img" src="assets/logo/half.png" alt="After Beats" width="500" height="500" loading="lazy" decoding="async">
+          </a>
           <p class="footer-tagline">Late nights. Deep feels. Your sound.<br>The Internet, Worldwide.</p>
-          <a href="mailto:contact@afterbeatsmusic.com" class="footer-email">contact@afterbeatsmusic.com</a>
+          <a href="mailto:admin@afterbeatsmusic.com" class="footer-email">admin@afterbeatsmusic.com</a>
         </div>
         <div class="footer-cols">
           <div class="footer-col">
@@ -356,17 +378,10 @@
     </div>
   </footer>
 
-  <div class="audio-control" id="audioControl">
-    <button class="audio-btn" id="audioBtn" aria-label="Enable audio">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-      Enable Audio
-    </button>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
-  <script src="js/main.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>

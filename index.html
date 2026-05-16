@@ -3,30 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>afterbeatsmusic — Late nights. Deep feels. Your sound.</title>
-  <meta name="description" content="afterbeatsmusic — Over 31 million quality music fans. Connecting independent artists with the world." />
-  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap" rel="stylesheet" />
+  <title>After Beats — Music with intention. Made for those who truly listen.</title>
+  <meta name="description" content="After Beats — Where meaningful music meets the right listeners. Curating standout sound for over 600,000 passionate music fans worldwide." />
+  <link rel="canonical" href="https://afterbeatsmusic.com/" />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="icon" type="image/png" sizes="500x500" href="assets/logo/half.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/logo/half.png" />
+  <link rel="apple-touch-icon" sizes="500x500" href="assets/logo/half.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="After Beats" />
+  <meta property="og:title" content="After Beats — Music with intention. Made for those who truly listen." />
+  <meta property="og:description" content="Where meaningful music meets the right listeners. Curating standout sound for over 600,000 passionate music fans worldwide." />
+  <meta property="og:url" content="https://afterbeatsmusic.com/" />
+  <meta property="og:image" content="https://afterbeatsmusic.com/assets/logo/1.png" />
+  <meta property="og:image:secure_url" content="https://afterbeatsmusic.com/assets/logo/1.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="1000" />
+  <meta property="og:image:alt" content="After Beats logo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="After Beats — Music with intention. Made for those who truly listen." />
+  <meta name="twitter:description" content="Where meaningful music meets the right listeners. Curating standout sound for over 600,000 passionate music fans worldwide." />
+  <meta name="twitter:image" content="https://afterbeatsmusic.com/assets/logo/1.png" />
+  <meta name="twitter:image:alt" content="After Beats logo" />
+
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <link rel="preload" as="video" href="assets/videos/hero.mp4" type="video/mp4">
+
   <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
 
   <!-- Page Loader -->
   <div class="page-loader" id="pageLoader">
-    <span class="loader-logo">afterbeatsmusic</span>
+    <img class="loader-logo" src="assets/logo/half.png" alt="After Beats" width="500" height="500" decoding="async">
   </div>
 
   <!-- Barba overlay for page transitions -->
   <div class="barba-overlay" id="barbaOverlay"></div>
 
-  <!-- ══ NAVIGATION ══════════════════════════════════════ -->
+  <!-- ══ NAVIGATION (Liquid-glass floating pill) ═══════════ -->
   <nav class="master-nav" id="masterNav" role="navigation">
-    <div class="nav-container">
-      <a href="index.html" class="nav-brand">afterbeatsmusic</a>
+    <div class="nav-pill">
+      <a href="index.html" class="nav-brand">
+        <img class="nav-brand-logo" src="assets/logo/half.png" alt="After Beats" width="500" height="500" decoding="async">
+      </a>
 
-      <div class="nav-links">
+      <div class="nav-center">
+        <a href="hall-of-fame.html" class="nav-link" data-barba-update>Hall of Fame</a>
+
         <!-- Channels Dropdown -->
         <div class="nav-dd-wrap">
-          <button class="nav-dd-btn" aria-expanded="false" aria-haspopup="true">
+          <button class="nav-dd-btn nav-link" aria-expanded="false" aria-haspopup="true">
             Channels
             <svg class="nav-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
@@ -37,47 +74,16 @@
               <a href="#" class="nav-dd-item">USA</a>
               <a href="#" class="nav-dd-item">Canada</a>
               <a href="#" class="nav-dd-item">UK</a>
-              <a href="#" class="nav-dd-item">Indonesia</a>
-              <a href="#" class="nav-dd-item">Poland</a>
-              <a href="#" class="nav-dd-item">Argentina</a>
-              <a href="#" class="nav-dd-item">Sweden</a>
-              <a href="#" class="nav-dd-item">Mexico</a>
-              <a href="#" class="nav-dd-item">Australia</a>
-              <a href="#" class="nav-dd-item">Germany</a>
-              <a href="#" class="nav-dd-item">France</a>
-              <a href="#" class="nav-dd-item">Brazil</a>
-              <a href="#" class="nav-dd-item">Italy</a>
-              <a href="#" class="nav-dd-item">Philippines</a>
-              <a href="#" class="nav-dd-item">Hindi</a>
-            </div>
-            <div>
-              <span class="nav-dd-col-label">Genres</span>
-              <a href="#" class="nav-dd-item">K-Pop</a>
-              <a href="#" class="nav-dd-item">Afro House</a>
-              <a href="#" class="nav-dd-item">Acoustic</a>
-              <a href="#" class="nav-dd-item">Indie</a>
-              <a href="#" class="nav-dd-item">Tech House</a>
-              <a href="#" class="nav-dd-item">Trance</a>
-              <a href="#" class="nav-dd-item">Tropical</a>
-              <a href="#" class="nav-dd-item">Lo-fi</a>
-              <a href="#" class="nav-dd-item">Techno</a>
-              <a href="#" class="nav-dd-item">Trap</a>
-              <a href="#" class="nav-dd-item">Drum &amp; Bass</a>
-              <a href="#" class="nav-dd-item">Phonk</a>
-              <a href="#" class="nav-dd-item">Afrobeats</a>
-              <a href="#" class="nav-dd-item">R&amp;B</a>
-              <a href="#" class="nav-dd-item">Country</a>
-              <a href="#" class="nav-dd-item">Rap</a>
-              <a href="#" class="nav-dd-item">Latin</a>
-              <a href="#" class="nav-dd-item">Chill</a>
-              <a href="#" class="nav-dd-item">Rock</a>
             </div>
           </div>
         </div>
 
+        <a href="articles.html" class="nav-link" data-barba-update>Articles</a>
+      </div>
+
+      <div class="nav-right">
         <a href="contact.html" class="nav-link" data-barba-update>Contact</a>
-        <a href="hall-of-fame.html" class="nav-link" data-barba-update>Hall of Fame</a>
-        <a href="#submit" class="nav-link nav-link-cta">Submit Demo</a>
+        <a href="index.html#submit" class="nav-link nav-link-cta">Submit Demo</a>
       </div>
 
       <!-- Mobile Toggle -->
@@ -92,372 +98,426 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <div class="mobile-nav-links">
-      <a href="contact.html" class="mobile-nav-link">Contact</a>
       <a href="hall-of-fame.html" class="mobile-nav-link">Hall of Fame</a>
-      <a href="#submit" class="mobile-nav-cta">Submit Demo</a>
+      <a href="articles.html" class="mobile-nav-link">Articles</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="index.html#submit" class="mobile-nav-cta">Submit Demo</a>
     </div>
     <div class="mobile-channels-label">Channels</div>
     <div class="mobile-channels-grid">
       <a href="#">afterbeatsmusic</a><a href="#">USA</a><a href="#">UK</a>
-      <a href="#">Canada</a><a href="#">Brazil</a><a href="#">Australia</a>
-      <a href="#">Germany</a><a href="#">France</a><a href="#">Mexico</a>
-      <a href="#">Poland</a><a href="#">K-Pop</a><a href="#">Lo-fi</a>
-      <a href="#">Trap</a><a href="#">Afrobeats</a><a href="#">R&amp;B</a>
-      <a href="#">Phonk</a><a href="#">Chill</a><a href="#">Rock</a>
-      <a href="#">Latin</a><a href="#">Rap</a><a href="#">Country</a>
-      <a href="#">Techno</a><a href="#">Indie</a><a href="#">Acoustic</a>
     </div>
   </div>
 
   <!-- ══ MAIN CONTENT ════════════════════════════════════ -->
   <main data-barba="container" data-barba-namespace="home">
 
-    <!-- ── Kaitonote Spotlight (Desktop 3D Hero) ── -->
-    <section class="kaitonote-spotlight" id="spotlight" aria-label="Featured releases">
-      <!-- 3D perspective container -->
-      <div class="spotlight-perspective" id="spotlightPerspective">
-        <div class="spotlight-img si-1"><div class="img-inner"><div class="img-bg"></div><span class="img-label">Hip-Hop</span></div></div>
-        <div class="spotlight-img si-2"><div class="img-inner"><div class="img-bg"></div><span class="img-label">Trap</span></div></div>
-        <div class="spotlight-img si-3"><div class="img-inner"><div class="img-bg"></div><span class="img-label">Afrobeats</span></div></div>
-        <div class="spotlight-img si-4"><div class="img-inner"><div class="img-bg"></div><span class="img-label">R&amp;B</span></div></div>
-        <div class="spotlight-img si-5"><div class="img-inner"><div class="img-bg"></div><span class="img-label">Phonk</span></div></div>
-        <div class="spotlight-img si-6"><div class="img-inner"><div class="img-bg"></div><span class="img-label">Drill</span></div></div>
-        <div class="spotlight-img si-7"><div class="img-inner"><div class="img-bg"></div><span class="img-label">Lo-fi</span></div></div>
-        <div class="spotlight-img si-8"><div class="img-inner"><div class="img-bg"></div><span class="img-label">Neo Soul</span></div></div>
+    <!-- ── Hero (Video Background + Liquid-Glass Pill) ── -->
+    <section class="hero-video" id="hero" aria-label="Hero">
+
+      <!-- Video background -->
+      <div class="hero-video-bg" id="heroVideoBg">
+        <video id="heroVideo" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/videos/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay" aria-hidden="true"></div>
+        <div class="hero-video-grain" aria-hidden="true"></div>
       </div>
 
-      <!-- Overlay text -->
-      <div class="spotlight-content">
-        <div class="spotlight-intro" id="spotlightIntro">
-          <h1>
-            <span class="line">Late nights.</span><br>
-            <span class="line">Deep feels.</span><br>
-            <span class="line">Your sound.</span>
-          </h1>
-          <a href="#" class="spotlight-listen-btn">
-            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
-            Listen Now
-          </a>
+      <!-- Centered content -->
+      <div class="hero-content" id="heroContent">
+        <div class="hero-logo" data-hero-reveal>
+          <img class="hero-logo-img" src="assets/logo/half.png" alt="After Beats" width="500" height="500" decoding="async">
         </div>
-        <div class="spotlight-outro" id="spotlightOutro">
-          <h2>13 years of curating music for<br>over 31 million quality music fans.</h2>
-        </div>
-      </div>
-    </section>
 
-    <!-- Mobile Hero Fallback -->
-    <section class="spotlight-mobile" aria-label="Hero">
-      <h1>Late nights.<br>Deep feels.<br>Your sound.</h1>
-      <a href="#" class="spotlight-listen-btn">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><polygon points="5,3 19,12 5,21"/></svg>
-        Listen Now
-      </a>
-    </section>
+        <h1 class="hero-headline" data-hero-reveal data-delay="1">
+          A platform built on a passion<br>for exceptional music
+        </h1>
 
-    <!-- ── Brand Intro ── -->
-    <section class="brand-intro section" data-animate-fade-in>
-      <div class="container brand-intro-wrap">
-        <span class="section-eyebrow">Curated · Never algorithmic</span>
-        <h2 class="brand-intro-title">afterbeatsmusic</h2>
-        <p class="brand-intro-lede">
-          A decade of hand-picked sound. We don't rely on algorithms, trending
-          charts, or paid placement. Every release we feature is chosen by a
-          human who fell in love with it first — the way music was always
-          supposed to reach your ears.
+        <p class="hero-sublede" data-hero-reveal data-delay="2">
+          For the past 9 years, After Beats has carefully curated standout songs from around
+          the world &mdash; building a home for over 600,000 passionate music fans who value
+          quality, discovery, and unforgettable sound.
         </p>
+
+        <div class="hero-ctas" data-hero-reveal data-delay="3">
+          <a href="#submit" class="hero-cta primary">
+            <span>Submit Your Demo</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+          <a href="hall-of-fame.html" class="hero-cta ghost" data-barba-update>Hall of Fame</a>
+        </div>
+      </div>
+
+      <!-- Partner strip — inside hero, bottom -->
+      <div class="hero-partners" data-hero-reveal data-delay="4">
+        <p class="hero-partners-label">Featuring artists from across the industry's most respected labels</p>
+        <div class="hero-partners-scroller">
+          <div class="hero-partners-track" aria-hidden="true">
+            <!-- Set 1 — first pass through the marquee -->
+            <img class="hp-logo" src="images/logos/warner.png"    alt="Warner Records"        decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/defjam.png"    alt="Def Jam Recordings"    decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/epic.png"      alt="Epic Records"          decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/universal.png" alt="Universal Music Group" decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/sony.png"      alt="Sony Music"            decoding="async" draggable="false">
+
+            <!-- Set 2 — duplicate for seamless loop (decorative, no alt) -->
+            <img class="hp-logo" src="images/logos/warner.png"    alt="" decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/defjam.png"    alt="" decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/epic.png"      alt="" decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/universal.png" alt="" decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/sony.png"      alt="" decoding="async" draggable="false">
+            
+            <!-- Set 2 — duplicate for seamless loop (decorative, no alt) -->
+            <img class="hp-logo" src="images/logos/warner.png"    alt="" decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/defjam.png"    alt="" decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/epic.png"      alt="" decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/universal.png" alt="" decoding="async" draggable="false">
+            <img class="hp-logo" src="images/logos/sony.png"      alt="" decoding="async" draggable="false">
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="hero-scroll-cue" aria-hidden="true">
+        <span class="hero-scroll-dot"></span>
       </div>
     </section>
 
-    <!-- ── Stats Strip ── -->
-    <div class="stats-strip" data-animate-fade-in>
-      <div class="stats-strip-inner">
-        <div class="stat-item">
-          <span class="stat-num">47 Billion+</span>
-          <span class="stat-label">Fans &amp; Listeners</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">7,000+</span>
-          <span class="stat-label">Curated Releases</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">24/7</span>
-          <span class="stat-label">Talent Search</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">45 Million</span>
-          <span class="stat-label">YouTube Subscribers</span>
-        </div>
+    <!-- ── Manifesto (bleeds from hero — matching black bg) ── -->
+    <section class="manifesto" id="manifesto" aria-label="Our philosophy">
+      <div class="manifesto-bleed" aria-hidden="true"></div>
+
+      <div class="manifesto-inner">
+        <div class="manifesto-quote" aria-hidden="true" data-manifesto-reveal>&ldquo;</div>
+
+        <p class="manifesto-text" data-manifesto-text>
+          After Beats is where meaningful music meets the right listeners. No
+          trend-chasing formulas, no disposable tracks &mdash; just thoughtfully
+          selected sounds and artists who create with purpose. Whether you're
+          discovering something fresh or reconnecting with what music should
+          truly feel like, this is where it begins.
+        </p>
+
+        <a href="hall-of-fame.html" class="manifesto-cta" data-manifesto-reveal data-delay="2" data-barba-update>
+          <span>Hall of Fame</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
       </div>
-    </div>
 
-    <!-- ── Trusted By ── -->
-    <div class="trusted-by" data-animate-fade-in>
-      <p class="trusted-by-label">Trusted &amp; partnered with</p>
-      <div class="trusted-scroller">
-        <div class="trusted-track" aria-hidden="true">
-          <span class="trusted-item">Universal Music Group</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Sony Music Entertainment</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Warner Records</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Def Jam</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Epic Records</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Atlantic Records</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Interscope</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <!-- duplicate for seamless loop -->
-          <span class="trusted-item">Universal Music Group</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Sony Music Entertainment</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Warner Records</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Def Jam</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Epic Records</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Atlantic Records</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-          <span class="trusted-item">Interscope</span>
-          <span class="trusted-item" style="color:var(--border-med)">·</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── Channels ── -->
-    <section class="channels-section section" id="channels">
-      <div class="container">
-        <div class="channels-intro">
-          <div class="channels-intro-text" data-animate-fade-in>
-            <span class="section-eyebrow">Our Channels</span>
-            <h2 class="section-heading">Music for every<br>corner of the world.</h2>
-            <p>From national channels to niche genres — afterbeatsmusic covers it all. Find your sound across our network of curated playlists and channels.</p>
-          </div>
-        </div>
-
-        <div class="channels-group" data-animate-fade-in>
-          <span class="channels-group-label">National Channels</span>
-          <div class="channels-grid">
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0d1a3d,#1a2e6b)">🌐</div><span class="channel-name">afterbeatsmusic</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#1a0a00,#3d1a00)">🇺🇸</div><span class="channel-name">USA</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0a1a0a,#1a3d1a)">🇨🇦</div><span class="channel-name">Canada</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#1a0a0a,#3d1515)">🇬🇧</div><span class="channel-name">UK</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#1a1500,#3d3000)">🇮🇩</div><span class="channel-name">Indonesia</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0a0a1a,#1a1a3d)">🇵🇱</div><span class="channel-name">Poland</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#1a0a0a,#4d1515)">🇦🇷</div><span class="channel-name">Argentina</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0d1520,#1a3050)">🇸🇪</div><span class="channel-name">Sweden</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#1a0d00,#3d2200)">🇲🇽</div><span class="channel-name">Mexico</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#001a15,#003d30)">🇦🇺</div><span class="channel-name">Australia</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0a0a1a,#151540)">🇩🇪</div><span class="channel-name">Germany</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0d1a0d,#1a401a)">🇫🇷</div><span class="channel-name">France</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#1a0505,#4d1010)">🇧🇷</div><span class="channel-name">Brazil</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0a0f1a,#1a2040)">🇮🇹</div><span class="channel-name">Italy</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#1a1000,#3d2a00)">🇵🇭</div><span class="channel-name">Philippines</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#150a1a,#3d1a4d)">🇮🇳</div><span class="channel-name">Hindi</span></a>
-          </div>
-        </div>
-
-        <div class="channels-group" data-animate-fade-in>
-          <span class="channels-group-label">Genre Channels</span>
-          <div class="channels-grid">
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#150015,#4d004d)">🎤</div><span class="channel-name">K-Pop</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#001a10,#003d22)">🎵</div><span class="channel-name">Afro House</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#1a1200,#3d2a00)">🎸</div><span class="channel-name">Acoustic</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0a0f1a,#1a2840)">🎹</div><span class="channel-name">Indie</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#001015,#002030)">🎛️</div><span class="channel-name">Tech House</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#100010,#300030)">🔊</div><span class="channel-name">Trance</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0a1510,#1a3020)">🌴</div><span class="channel-name">Tropical</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0d0d1a,#1a1a3d)">📻</div><span class="channel-name">Lo-fi</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#050510,#101040)">⚙️</div><span class="channel-name">Techno</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#1a0500,#3d1000)">🔥</div><span class="channel-name">Trap</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#060010,#180030)">🥁</div><span class="channel-name">Drum &amp; Bass</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#150005,#3d0015)">👻</div><span class="channel-name">Phonk</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#001a05,#003d10)">🌍</div><span class="channel-name">Afrobeats</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#100008,#300020)">🎙️</div><span class="channel-name">R&amp;B</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0f0800,#2a1a00)">🤠</div><span class="channel-name">Country</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#100800,#2a1800)">🎤</div><span class="channel-name">Rap</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#1a0505,#3d0f0f)">💃</div><span class="channel-name">Latin</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#0a0f15,#14202f)">🌙</div><span class="channel-name">Chill</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#100000,#280808)">🎸</div><span class="channel-name">Rock</span></a>
-            <a href="#" class="channel-card"><div class="channel-icon" style="background:linear-gradient(135deg,#001510,#003020)">🎄</div><span class="channel-name">Christmas Music</span></a>
-          </div>
+      <div class="manifesto-team" data-manifesto-reveal data-delay="3">
+        <div class="mt-strip">
+          <div class="mt-avatar ta-1" title="Alex Rivera" data-animate-employee-avatar>AR</div>
+          <div class="mt-avatar ta-2" title="Maya Chen" data-animate-employee-avatar>MC</div>
+          <div class="mt-avatar ta-3" title="Jordan Smith" data-animate-employee-avatar>JS</div>
+          <div class="mt-avatar ta-4" title="Priya Patel" data-animate-employee-avatar>PP</div>
+          <div class="mt-avatar ta-5" title="Liam Torres" data-animate-employee-avatar>LT</div>
+          <div class="mt-avatar ta-6" title="Zara Ahmed" data-animate-employee-avatar>ZA</div>
+          <div class="mt-avatar ta-7" title="Kai Nakamura" data-animate-employee-avatar>KN</div>
+          <div class="mt-avatar ta-8" title="Sofia Rossi" data-animate-employee-avatar>SR</div>
+          <div class="mt-avatar ta-9" title="Dev Okafor" data-animate-employee-avatar>DO</div>
+          <div class="mt-avatar mt-more" aria-label="33 more team members">+33</div>
         </div>
       </div>
     </section>
 
-    <!-- ── Artist Gallery (20 tiles) ── -->
-    <section class="artist-gallery section" id="artists">
-      <div class="container">
-        <div class="artist-gallery-head" data-animate-fade-in>
-          <span class="section-eyebrow">Featured Roster</span>
-          <h2 class="section-heading">Artists we've amplified.</h2>
-          <p class="section-body">A small window into the releases that have moved through our network — across continents, genres, and moods.</p>
-        </div>
-        <div class="artist-gallery-grid" data-animate-fade-in data-delay="1">
-          <div class="ag-tile ag-1"><span class="ag-label">Midnight Frequencies</span></div>
-          <div class="ag-tile ag-2"><span class="ag-label">Gold Horizons</span></div>
-          <div class="ag-tile ag-3"><span class="ag-label">Paper Skylines</span></div>
-          <div class="ag-tile ag-4"><span class="ag-label">Neon Regret</span></div>
-          <div class="ag-tile ag-5"><span class="ag-label">Velvet Monday</span></div>
-          <div class="ag-tile ag-6"><span class="ag-label">Cinder &amp; Smoke</span></div>
-          <div class="ag-tile ag-7"><span class="ag-label">Low Tide</span></div>
-          <div class="ag-tile ag-8"><span class="ag-label">Echo Cartel</span></div>
-          <div class="ag-tile ag-9"><span class="ag-label">Azure Drift</span></div>
-          <div class="ag-tile ag-10"><span class="ag-label">Fever Dream</span></div>
-          <div class="ag-tile ag-11"><span class="ag-label">Marble Sun</span></div>
-          <div class="ag-tile ag-12"><span class="ag-label">Saint Avenue</span></div>
-          <div class="ag-tile ag-13"><span class="ag-label">Glass Harbor</span></div>
-          <div class="ag-tile ag-14"><span class="ag-label">Wilder Nights</span></div>
-          <div class="ag-tile ag-15"><span class="ag-label">Paper Tigers</span></div>
-          <div class="ag-tile ag-16"><span class="ag-label">Opal District</span></div>
-          <div class="ag-tile ag-17"><span class="ag-label">Indigo Hour</span></div>
-          <div class="ag-tile ag-18"><span class="ag-label">Quiet Riot</span></div>
-          <div class="ag-tile ag-19"><span class="ag-label">Ash &amp; Honey</span></div>
-          <div class="ag-tile ag-20"><span class="ag-label">Ultra Bloom</span></div>
+    <!-- ── Showcase Strip (mixed images + videos, auto-scrolling) ── -->
+    <section class="showcase-strip" id="showcase" aria-label="Featured releases">
+      <!-- Top fade — bleeds from the manifesto's team strip -->
+      <div class="showcase-top-fade" aria-hidden="true"></div>
+
+      <div class="showcase-viewport">
+        <div class="showcase-track" id="showcaseTrack">
+
+          <!-- Set 1 — 6 cards: [img, video, img, img, video, img] -->
+          <figure class="sc-item">
+            <img src="assets/5Pics/1 (5).jpg" alt="Katy Perry — Wide Awake" loading="lazy" decoding="async">
+          </figure>
+          <figure class="sc-item sc-video">
+            <video muted loop playsinline preload="metadata" data-offset="2">
+              <source src="images/9757086-uhd_3840_2160_24fps.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="sc-item">
+            <img src="assets/5Pics/1 (11).jpg" alt="James Arthur — Say You Won't Let Go" loading="lazy" decoding="async">
+          </figure>
+          <figure class="sc-item">
+            <img src="assets/5Pics/1 (9).jpg" alt="The Chainsmokers — Closer" loading="lazy" decoding="async">
+          </figure>
+          <figure class="sc-item sc-video">
+            <video muted loop playsinline preload="metadata" data-offset="14">
+              <source src="assets/videos/cont.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="sc-item">
+            <img src="assets/5Pics/1 (10).jpg" alt="Natalie Jane — AVA" loading="lazy" decoding="async">
+          </figure>
+
+          <!-- Set 2 — identical, aria-hidden for seamless loop -->
+          <figure class="sc-item" aria-hidden="true">
+            <img src="assets/5Pics/1 (5).jpg" alt="" loading="lazy" decoding="async">
+          </figure>
+          <figure class="sc-item sc-video" aria-hidden="true">
+            <video muted loop playsinline preload="metadata" data-offset="2">
+              <source src="images/9757086-uhd_3840_2160_24fps.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="sc-item" aria-hidden="true">
+            <img src="assets/5Pics/1 (11).jpg" alt="" loading="lazy" decoding="async">
+          </figure>
+          <figure class="sc-item" aria-hidden="true">
+            <img src="assets/5Pics/1 (9).jpg" alt="" loading="lazy" decoding="async">
+          </figure>
+          <figure class="sc-item sc-video" aria-hidden="true">
+            <video muted loop playsinline preload="metadata" data-offset="14">
+              <source src="assets/videos/cont.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="sc-item" aria-hidden="true">
+            <img src="assets/5Pics/1 (10).jpg" alt="" loading="lazy" decoding="async">
+          </figure>
+
         </div>
       </div>
     </section>
 
-    <!-- ── Growth Timeline ── -->
-    <section class="growth-timeline section" data-animate-fade-in>
-      <div class="container growth-wrap">
-        <h2 class="growth-line growth-line-1">From a bedroom in 2013</h2>
-        <h2 class="growth-line growth-line-2">to 45 million and counting in 2026.</h2>
+    <!-- ── Story (pinned scrollytelling: flurry → video zoom → stats → outro) ── -->
+    <section class="story" id="story" aria-label="From a kid's bedroom to 45 million">
+      <div class="story-stage">
+
+        <!-- Phase 1: opening headline -->
+        <h2 class="story-h1" data-story-h1>
+          From a kid's bedroom<br>in 2017
+        </h2>
+
+        <!-- Image flurry — 15 images at scattered absolute positions -->
+        <div class="story-flurry" aria-hidden="true">
+          <img class="sf-img sf-1"  src="assets/25Pics/1 (1).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-2"  src="assets/25Pics/1 (2).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-3"  src="assets/25Pics/1 (3).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-4"  src="assets/25Pics/1 (4).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-5"  src="assets/25Pics/1 (5).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-6"  src="assets/25Pics/1 (6).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-7"  src="assets/25Pics/1 (7).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-8"  src="assets/25Pics/1 (8).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-9"  src="assets/25Pics/1 (9).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-10" src="assets/25Pics/1 (10).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-11" src="assets/25Pics/1 (11).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-12" src="assets/25Pics/1 (12).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-13" src="assets/25Pics/1 (13).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-14" src="assets/25Pics/1 (14).jpg" alt="" loading="lazy" decoding="async">
+          <img class="sf-img sf-15" src="assets/25Pics/1 (15).jpg" alt="" loading="lazy" decoding="async">
+        </div>
+
+        <!-- Phase 2: video that zooms from a tiny center card to fullscreen -->
+        <div class="story-video" data-story-video>
+          <video id="storyVideo" muted loop playsinline preload="metadata" data-offset="6">
+            <source src="assets/videos/13yo.mp4" type="video/mp4">
+          </video>
+          <div class="story-video-vignette" aria-hidden="true"></div>
+        </div>
+
+        <!-- Phase 2 overlay: top-left title -->
+        <div class="story-p2-title" data-story-p2title>
+          <h3>
+            <span class="p2-title-strong">What started as a love for music</span>
+            <span class="p2-title-soft">became a home for those who truly listen.</span>
+          </h3>
+        </div>
+
+        <!-- Phase 2 overlay: bottom-row stats -->
+        <div class="story-stats" data-story-stats>
+          <div class="story-stat">
+            <span class="ss-num">600K+</span>
+            <span class="ss-label">Passionate Music Fans</span>
+          </div>
+          <div class="story-stat">
+            <span class="ss-num">1,200+</span>
+            <span class="ss-label">Tracks Carefully Curated</span>
+          </div>
+          <div class="story-stat">
+            <span class="ss-num">9 Years</span>
+            <span class="ss-label">Of Curating With Purpose</span>
+          </div>
+          <div class="story-stat">
+            <span class="ss-num">24/7</span>
+            <span class="ss-label">Discovering New Voices</span>
+          </div>
+        </div>
+
+        <!-- Phase 3: closing headline -->
+        <h2 class="story-h3" data-story-h3>
+          To 600,000+ listeners<br>and counting in 2026
+        </h2>
+
       </div>
     </section>
 
     <!-- ── Submit Demo ── -->
-    <section class="demo-section section" id="submit">
-      <div class="container">
-        <div class="demo-grid">
-          <!-- Left info -->
-          <div data-animate-fade-in>
-            <span class="section-eyebrow">Submit Your Demo</span>
-            <h2 class="section-heading">We listen to<br>every submission.</h2>
-            <p class="section-body">afterbeatsmusic accepts demos from independent artists, producers, and labels. If your music meets our quality standard and fits our audience, we'll feature it across our network.</p>
-            <ul class="demo-info-bullets">
-              <li class="demo-info-bullet">All genres considered</li>
-              <li class="demo-info-bullet">Independent &amp; signed artists welcome</li>
-              <li class="demo-info-bullet">Response within 7–14 business days</li>
-              <li class="demo-info-bullet">No upfront fees required</li>
-              <li class="demo-info-bullet">Global reach across 50+ channels</li>
-            </ul>
+    <section class="demo-section" id="submit">
+
+      <!-- Header block: brand mark → big title → lede -->
+      <div class="demo-header">
+        <img class="demo-brand-mark" src="assets/logo/half.png" alt="" width="500" height="500" decoding="async" data-animate-fade-in>
+        <h2 class="demo-section-title" data-animate-fade-in data-delay="1">Submit Your Demo</h2>
+        <p class="demo-section-lede" data-animate-fade-in data-delay="2">
+          For emerging artists ready to share their talent, After Beats is more than
+          a platform &mdash; it's a stage. If you have a voice, a vision, and music worth
+          hearing, this is where your artistry meets an audience that truly listens.
+        </p>
+      </div>
+
+      <!-- Submission portal card -->
+      <div class="demo-card" data-animate-fade-in data-delay="3">
+        <div class="demo-card-head">
+          <div class="demo-card-head-row">
+            <img class="demo-card-mark" src="assets/logo/half.png" alt="" width="500" height="500" loading="lazy" decoding="async">
+            <h3 class="demo-card-title">Submission Portal</h3>
+          </div>
+          <p class="demo-card-subtitle">Tell us about you. Share your music. We listen to every submission.</p>
+        </div>
+
+        <form id="demoForm" class="demo-form" name="demo" method="POST" action="/" novalidate
+              data-netlify="true" data-netlify-honeypot="bot-field">
+
+          <!-- ── Netlify Forms wiring ─────────────────────────────────────
+               Submissions appear in the Netlify dashboard under the "demo"
+               form. Email delivery to admin@afterbeatsmusic.com is configured
+               there (Forms → demo → Form notifications), not in code.
+
+               • `name="demo"` + `data-netlify="true"` lets Netlify's build
+                 parser register the form at deploy time.
+               • The hidden `form-name` field below is required for AJAX POSTs.
+               • `data-netlify-honeypot="bot-field"` tells Netlify to drop any
+                 submission where the bot-field input has been filled.
+          -->
+          <input type="hidden" name="form-name" value="demo">
+
+          <!-- Honeypot: real users never see/fill this; bots usually do.
+               Netlify drops any submission where bot-field is non-empty. -->
+          <label class="form-honeypot" aria-hidden="true">
+            Don't fill this out if you're human:
+            <input type="text" name="bot-field" tabindex="-1" autocomplete="off">
+          </label>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label" for="f-name">Your Full Name</label>
+              <input class="form-input" type="text" id="f-name" name="name" placeholder="Your full legal name" autocomplete="name" required />
+              <span class="form-error-msg">Please enter your name</span>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="f-email">Email</label>
+              <input class="form-input" type="email" id="f-email" name="email" placeholder="e.g., artist@email.com" autocomplete="email" required />
+              <span class="form-error-msg">Please enter a valid email</span>
+            </div>
           </div>
 
-          <!-- Form -->
-          <div class="demo-form-wrap" data-animate-fade-in data-delay="2">
-            <form id="demoForm" novalidate>
-              <div class="form-row">
-                <div class="form-field">
-                  <label class="form-label" for="f-name">Full Name *</label>
-                  <input class="form-input" type="text" id="f-name" name="name" placeholder="Your full name" required />
-                  <span class="form-error-msg">Please enter your name</span>
-                </div>
-                <div class="form-field">
-                  <label class="form-label" for="f-email">Email *</label>
-                  <input class="form-input" type="email" id="f-email" name="email" placeholder="you@email.com" required />
-                  <span class="form-error-msg">Please enter a valid email</span>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-field">
-                  <label class="form-label" for="f-artist">Artist / s *</label>
-                  <input class="form-input" type="text" id="f-artist" name="artist" placeholder="Artist name(s)" required />
-                  <span class="form-error-msg">Please enter artist name</span>
-                </div>
-                <div class="form-field">
-                  <label class="form-label" for="f-track">Track Name *</label>
-                  <input class="form-input" type="text" id="f-track" name="track" placeholder="Track title" required />
-                  <span class="form-error-msg">Please enter track name</span>
-                </div>
-              </div>
-              <div class="form-field">
-                <label class="form-label" for="f-link">Stream Link *</label>
-                <input class="form-input" type="url" id="f-link" name="link" placeholder="Spotify, SoundCloud, YouTube…" required />
-                <span class="form-error-msg">Please enter a valid URL</span>
-              </div>
-              <div class="form-row">
-                <div class="form-field">
-                  <label class="form-label" for="f-status">Release Status *</label>
-                  <div class="form-select-wrap">
-                    <select class="form-select" id="f-status" name="status" required>
-                      <option value="">Select status</option>
-                      <option>Released</option>
-                      <option>Unreleased / Pre-release</option>
-                      <option>Exclusive</option>
-                    </select>
-                  </div>
-                  <span class="form-error-msg">Please select release status</span>
-                </div>
-                <div class="form-field">
-                  <label class="form-label" for="f-type">Applicant Type *</label>
-                  <div class="form-select-wrap">
-                    <select class="form-select" id="f-type" name="type" required>
-                      <option value="">Select type</option>
-                      <option>Label</option>
-                      <option>Signed Artist</option>
-                      <option>Independent Artist</option>
-                      <option>Other</option>
-                    </select>
-                  </div>
-                  <span class="form-error-msg">Please select applicant type</span>
-                </div>
-              </div>
-              <div class="form-field">
-                <label class="form-label" for="f-channel">Channel Selection</label>
-                <div class="form-select-wrap">
-                  <select class="form-select" id="f-channel" name="channel">
-                    <option value="">Select preferred channel</option>
-                    <option>afterbeatsmusic (Main)</option>
-                    <option>USA</option><option>Canada</option><option>UK</option>
-                    <option>Indonesia</option><option>Poland</option><option>Argentina</option>
-                    <option>Sweden</option><option>Mexico</option><option>Australia</option>
-                    <option>Germany</option><option>France</option><option>Brazil</option>
-                    <option>Italy</option><option>Philippines</option><option>Hindi</option>
-                    <option>K-Pop</option><option>Afro House</option><option>Acoustic</option>
-                    <option>Indie</option><option>Tech House</option><option>Trance</option>
-                    <option>Tropical</option><option>Lo-fi</option><option>Techno</option>
-                    <option>Trap</option><option>Drum &amp; Bass</option><option>Phonk</option>
-                    <option>Afrobeats</option><option>R&amp;B</option><option>Country</option>
-                    <option>Rap</option><option>Latin</option><option>Chill</option>
-                    <option>Rock</option><option>Christmas Music</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-check-wrap">
-                <input class="form-check-input" type="checkbox" id="f-terms" name="terms" required />
-                <label class="form-check-label" for="f-terms">
-                  I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> of afterbeatsmusic. *
-                </label>
-              </div>
-              <div class="form-check-wrap">
-                <input class="form-check-input" type="checkbox" id="f-rights" name="rights" required />
-                <label class="form-check-label" for="f-rights">
-                  I confirm that I own or have the rights to submit this music. *
-                </label>
-              </div>
-              <button type="submit" class="form-submit" id="formSubmit">Submit Demo</button>
-              <div class="form-success" id="formSuccess">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#0082f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span>Your demo was submitted! We'll get back to you within 7–14 business days.</span>
-              </div>
-            </form>
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label" for="f-artist">Artist/s</label>
+              <input class="form-input" type="text" id="f-artist" name="artist" placeholder="e.g., DJ Miranda" required />
+              <span class="form-error-msg">Please enter artist name</span>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="f-track">Track Name</label>
+              <input class="form-input" type="text" id="f-track" name="track" placeholder="e.g., In The Clouds" required />
+              <span class="form-error-msg">Please enter track name</span>
+            </div>
           </div>
-        </div>
+
+          <div class="form-field">
+            <label class="form-label" for="f-link">Stream Link</label>
+            <input class="form-input" type="url" id="f-link" name="link" placeholder="e.g., https://drive.google.com/drive/..." required />
+            <span class="form-error-msg">Please enter a valid URL</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label" for="f-status">Release Status</label>
+              <div class="form-select-wrap">
+                <select class="form-select" id="f-status" name="status" required>
+                  <option value="">Choose release status</option>
+                  <option>Released</option>
+                  <option>Unreleased / Pre-release</option>
+                  <option>Exclusive</option>
+                </select>
+              </div>
+              <span class="form-error-msg">Please select release status</span>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="f-type">You Are Applying As</label>
+              <div class="form-select-wrap">
+                <select class="form-select" id="f-type" name="type" required>
+                  <option value="">Choose who you're applying as</option>
+                  <option>Label</option>
+                  <option>Signed Artist</option>
+                  <option>Independent Artist</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <span class="form-error-msg">Please select applicant type</span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="f-channel">Submission For</label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="f-channel" name="channel" required>
+                <option value="">Select the desired channel from our collection</option>
+                <option>afterbeatsmusic (Main)</option>
+                <option>USA</option><option>Canada</option><option>UK</option>
+                <option>Indonesia</option><option>Poland</option><option>Argentina</option>
+                <option>Sweden</option><option>Mexico</option><option>Australia</option>
+              </select>
+            </div>
+            <span class="form-error-msg">Please select a channel</span>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="f-info">More Info</label>
+            <textarea class="form-textarea" id="f-info" name="info" rows="4" placeholder="Include a short bio or related artists"></textarea>
+          </div>
+
+          <div class="form-check-wrap">
+            <input class="form-check-input" type="checkbox" id="f-terms" name="terms" required />
+            <label class="form-check-label" for="f-terms">
+              <span class="form-check-box" aria-hidden="true"></span>
+              By sending this form, I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="form-submit" id="formSubmit">
+            <span class="form-submit-label">Submit Your Demo</span>
+            <svg class="form-submit-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </button>
+
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#0082f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Your demo was submitted! We'll get back to you within 7–14 business days.</span>
+          </div>
+
+          <div class="form-error" id="formError" role="alert" aria-live="assertive">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ea384c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span id="formErrorMsg">Something went wrong — please try again, or email us directly at admin@afterbeatsmusic.com.</span>
+          </div>
+        </form>
       </div>
     </section>
 
     <!-- ── Team ── -->
-    <section class="team-section section" id="team">
-      <div class="container">
-        <div data-animate-fade-in>
+    <section class="team-section" id="team">
+      <div class="team-inner">
+        <div class="team-head" data-animate-fade-in>
           <span class="section-eyebrow">Our Team</span>
-          <h2 class="section-heading">The people behind<br>the music.</h2>
-          <p class="section-body">A dedicated team of curators, music lovers, and industry professionals working around the clock to discover and amplify the best sounds from around the world.</p>
+          <h2 class="team-heading">The people behind<br>the music.</h2>
+          <p class="team-body">A small team of curators, listeners, and music obsessives. Every release we feature is chosen by ear, not by algorithm.</p>
         </div>
         <div class="team-grid" data-animate-fade-in data-delay="2">
           <div class="team-avatar ta-1" title="Alex Rivera" data-animate-employee-avatar>AR</div>
@@ -470,43 +530,92 @@
           <div class="team-avatar ta-8" title="Sofia Rossi" data-animate-employee-avatar>SR</div>
           <div class="team-avatar ta-9" title="Dev Okafor" data-animate-employee-avatar>DO</div>
           <div class="team-avatar team-avatar-more">+33</div>
-          <div class="sound-wave" aria-hidden="true">
-            <div class="bar"></div><div class="bar"></div>
-            <div class="bar"></div><div class="bar"></div>
-            <div class="bar"></div>
-          </div>
+        </div>
+        <div class="sound-wave" aria-hidden="true" data-animate-fade-in data-delay="3">
+          <div class="bar"></div><div class="bar"></div>
+          <div class="bar"></div><div class="bar"></div>
+          <div class="bar"></div>
         </div>
       </div>
     </section>
 
-    <!-- ── Final CTA ── -->
-    <section class="final-cta section" data-animate-fade-in>
-      <div class="container final-cta-wrap">
-        <h2 class="final-cta-title">Ready to find your<br>new favorite sound?</h2>
-        <div class="final-cta-btns">
+    <!-- ── Final CTA (Video BG) ── -->
+    <section class="final-cta" id="cta">
+
+      <!-- Video background — swap the <source src> to change the clip -->
+      <div class="final-cta-bg" aria-hidden="true">
+        <video id="finalCtaVideo" muted loop playsinline preload="metadata" autoplay>
+          <source src="images/9757086-uhd_3840_2160_24fps.mp4" type="video/mp4">
+        </video>
+        <div class="final-cta-overlay"></div>
+      </div>
+
+      <div class="final-cta-wrap" data-animate-fade-in>
+        <h2 class="final-cta-title">Ready for your next<br>favorite sound?</h2>
+        <p class="final-cta-sublede" data-animate-fade-in data-delay="1">
+          Join 600,000+ listeners who choose music with intention.
+        </p>
+        <div class="final-cta-btns" data-animate-fade-in data-delay="2">
           <a href="#" class="final-cta-btn primary">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><polygon points="5,3 19,12 5,21"/></svg>
-            Listen Now
+            <span>Listen Now</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
           </a>
-          <a href="#channels" class="final-cta-btn ghost">Browse Playlists</a>
+          <a href="#" class="final-cta-btn ghost">Browse Playlists</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ══ FOOTER ═══════════════════════════════════════════ -->
+  <!-- ══ FOOTER (Elevated card) ═══════════════════════════ -->
   <footer class="master-footer">
-    <div class="container">
+    <div class="footer-card">
+
       <div class="footer-top">
+        <!-- Brand block -->
         <div class="footer-brand">
-          <a href="index.html" class="footer-logo">afterbeatsmusic</a>
-          <p class="footer-tagline">Late nights. Deep feels. Your sound.<br>The Internet, Worldwide.</p>
-          <a href="mailto:contact@afterbeatsmusic.com" class="footer-email">contact@afterbeatsmusic.com</a>
+          <a href="index.html" class="footer-logo">
+            <img class="footer-logo-img" src="assets/logo/half.png" alt="After Beats" width="500" height="500" loading="lazy" decoding="async">
+          </a>
+
+          <address class="footer-address">
+            afterbeatsmusic HQ<br>
+            The Internet<br>
+            Worldwide
+          </address>
+
+          <div class="footer-line">
+            <a href="https://youtube.com" class="footer-link-strong" target="_blank" rel="noreferrer">YouTube</a>
+            <span class="footer-line-sub">(Where the music lives.)</span>
+          </div>
+
+          <a href="mailto:admin@afterbeatsmusic.com" class="footer-link-strong">admin@afterbeatsmusic.com</a>
+
+          <div class="footer-socials">
+            <a href="#" class="footer-social-link" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.9-2-.9C16.6 5 12 5 12 5s-4.6 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.6 0 7-.1c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5v-5.5l5.5 2.8-5.5 2.7z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="X / Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="SoundCloud">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.56 8.87V17h8.76c1.25 0 2.32-.97 2.38-2.21.06-1.3-.93-2.39-2.21-2.42-.04 0-.08 0-.12.01-.19-2.32-2.13-4.15-4.51-4.15-1.1 0-2.11.39-2.88 1.03-.32-.19-.67-.29-1.05-.29-.03 0-.06 0-.09 0-.75.04-1.34.64-1.34 1.39 0 .38.15.72.39.97m-9.87 5.18c0 1.62 1.32 2.93 2.95 2.93.07 0 .14 0 .21-.01H8.5V7.83c-.28-.13-.58-.19-.9-.19-1.62 0-2.94 1.32-2.94 2.94 0 .24.03.47.09.69C3.01 11.54 1.69 12.69 1.69 14.05z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Spotify">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            </a>
+          </div>
         </div>
+
+        <!-- 3-column nav -->
         <div class="footer-cols">
           <div class="footer-col">
-            <h4>Popular Channels</h4>
+            <h4>Popular</h4>
             <a href="#">afterbeatsmusic</a>
             <a href="#">Rock</a>
             <a href="#">Latin</a>
@@ -528,42 +637,21 @@
           </div>
         </div>
       </div>
+
+      <!-- Decorative big mark + copyright row -->
       <div class="footer-bottom">
-        <div class="footer-socials">
-          <a href="#" class="footer-social-link" aria-label="YouTube">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.9-2-.9C16.6 5 12 5 12 5s-4.6 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.6 0 7-.1c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5v-5.5l5.5 2.8-5.5 2.7z"/></svg>
-          </a>
-          <a href="#" class="footer-social-link" aria-label="Instagram">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
-          </a>
-          <a href="#" class="footer-social-link" aria-label="X / Twitter">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="#" class="footer-social-link" aria-label="SoundCloud">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.56 8.87V17h8.76c1.25 0 2.32-.97 2.38-2.21.06-1.3-.93-2.39-2.21-2.42-.04 0-.08 0-.12.01-.19-2.32-2.13-4.15-4.51-4.15-1.1 0-2.11.39-2.88 1.03-.32-.19-.67-.29-1.05-.29-.03 0-.06 0-.09 0-.75.04-1.34.64-1.34 1.39 0 .38.15.72.39.97m-9.87 5.18c0 1.62 1.32 2.93 2.95 2.93.07 0 .14 0 .21-.01H8.5V7.83c-.28-.13-.58-.19-.9-.19-1.62 0-2.94 1.32-2.94 2.94 0 .24.03.47.09.69C3.01 11.54 1.69 12.69 1.69 14.05z"/></svg>
-          </a>
-          <a href="#" class="footer-social-link" aria-label="Spotify">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
-          </a>
-        </div>
-        <span class="footer-copyright">&copy; <span class="copyright-year">2025</span> afterbeatsmusic. All rights reserved.</span>
+        <span class="footer-copyright">&copy; <span class="copyright-year">2026</span> afterbeatsmusic. All rights reserved.</span>
+        <img class="footer-decor-mark" src="assets/logo/half.png" alt="" width="500" height="500" loading="lazy" decoding="async">
+        <span class="footer-bottom-spacer" aria-hidden="true"></span>
       </div>
     </div>
   </footer>
 
-  <!-- ── Audio Control (fixed) ── -->
-  <div class="audio-control" id="audioControl">
-    <button class="audio-btn" id="audioBtn" aria-label="Enable audio">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-      Enable Audio
-    </button>
-  </div>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
-  <script src="js/main.js"></script>
+  <!-- Scripts (deferred — parse alongside HTML, execute in order after parse) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>

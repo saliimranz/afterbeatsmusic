@@ -5,61 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — afterbeatsmusic</title>
   <meta name="description" content="Get in touch with afterbeatsmusic. Press inquiries, demo submissions, and distribution." />
-  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap" rel="stylesheet" />
+  <link rel="canonical" href="https://afterbeatsmusic.com/contact.html" />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="icon" type="image/png" sizes="500x500" href="assets/logo/half.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/logo/half.png" />
+  <link rel="apple-touch-icon" sizes="500x500" href="assets/logo/half.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="After Beats" />
+  <meta property="og:title" content="Contact — afterbeatsmusic" />
+  <meta property="og:description" content="Get in touch with afterbeatsmusic. Press inquiries, demo submissions, and distribution." />
+  <meta property="og:url" content="https://afterbeatsmusic.com/contact.html" />
+  <meta property="og:image" content="https://afterbeatsmusic.com/assets/logo/1.png" />
+  <meta property="og:image:secure_url" content="https://afterbeatsmusic.com/assets/logo/1.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="1000" />
+  <meta property="og:image:alt" content="After Beats logo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Contact — afterbeatsmusic" />
+  <meta name="twitter:description" content="Get in touch with afterbeatsmusic. Press inquiries, demo submissions, and distribution." />
+  <meta name="twitter:image" content="https://afterbeatsmusic.com/assets/logo/1.png" />
+  <meta name="twitter:image:alt" content="After Beats logo" />
+
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
   <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
 
   <!-- Page Loader -->
   <div class="page-loader" id="pageLoader">
-    <span class="loader-logo">afterbeatsmusic</span>
+    <img class="loader-logo" src="assets/logo/half.png" alt="After Beats" width="500" height="500" decoding="async">
   </div>
 
   <!-- Barba overlay -->
   <div class="barba-overlay" id="barbaOverlay"></div>
 
   <!-- ══ NAVIGATION ══════════════════════════════════════ -->
+  <!-- ══ NAVIGATION (Liquid-glass flush-top, rounded-bottom) ═══ -->
   <nav class="master-nav" id="masterNav" role="navigation">
-    <div class="nav-container">
-      <a href="index.html" class="nav-brand">afterbeatsmusic</a>
-      <div class="nav-links">
+    <div class="nav-pill">
+      <a href="index.html" class="nav-brand">
+        <img class="nav-brand-logo" src="assets/logo/half.png" alt="After Beats" width="500" height="500" decoding="async">
+      </a>
+
+      <div class="nav-center">
+        <a href="hall-of-fame.html" class="nav-link" data-barba-update>Hall of Fame</a>
+
         <div class="nav-dd-wrap">
-          <button class="nav-dd-btn" aria-expanded="false">
+          <button class="nav-dd-btn nav-link" aria-expanded="false" aria-haspopup="true">
             Channels
             <svg class="nav-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
-          <div class="nav-dd-menu">
+          <div class="nav-dd-menu" role="menu">
             <div>
               <span class="nav-dd-col-label">National</span>
               <a href="#" class="nav-dd-item">afterbeatsmusic</a>
               <a href="#" class="nav-dd-item">USA</a><a href="#" class="nav-dd-item">Canada</a>
-              <a href="#" class="nav-dd-item">UK</a><a href="#" class="nav-dd-item">Indonesia</a>
-              <a href="#" class="nav-dd-item">Poland</a><a href="#" class="nav-dd-item">Argentina</a>
-              <a href="#" class="nav-dd-item">Sweden</a><a href="#" class="nav-dd-item">Mexico</a>
-              <a href="#" class="nav-dd-item">Australia</a><a href="#" class="nav-dd-item">Germany</a>
-              <a href="#" class="nav-dd-item">France</a><a href="#" class="nav-dd-item">Brazil</a>
-              <a href="#" class="nav-dd-item">Italy</a><a href="#" class="nav-dd-item">Philippines</a>
-              <a href="#" class="nav-dd-item">Hindi</a>
-            </div>
-            <div>
-              <span class="nav-dd-col-label">Genres</span>
-              <a href="#" class="nav-dd-item">K-Pop</a><a href="#" class="nav-dd-item">Afro House</a>
-              <a href="#" class="nav-dd-item">Acoustic</a><a href="#" class="nav-dd-item">Indie</a>
-              <a href="#" class="nav-dd-item">Tech House</a><a href="#" class="nav-dd-item">Trance</a>
-              <a href="#" class="nav-dd-item">Tropical</a><a href="#" class="nav-dd-item">Lo-fi</a>
-              <a href="#" class="nav-dd-item">Techno</a><a href="#" class="nav-dd-item">Trap</a>
-              <a href="#" class="nav-dd-item">Drum &amp; Bass</a><a href="#" class="nav-dd-item">Phonk</a>
-              <a href="#" class="nav-dd-item">Afrobeats</a><a href="#" class="nav-dd-item">R&amp;B</a>
-              <a href="#" class="nav-dd-item">Country</a><a href="#" class="nav-dd-item">Rap</a>
-              <a href="#" class="nav-dd-item">Latin</a><a href="#" class="nav-dd-item">Chill</a>
-              <a href="#" class="nav-dd-item">Rock</a>
             </div>
           </div>
         </div>
+
+        <a href="articles.html" class="nav-link" data-barba-update>Articles</a>
+      </div>
+
+      <div class="nav-right">
         <a href="contact.html" class="nav-link" aria-current="page">Contact</a>
-        <a href="hall-of-fame.html" class="nav-link">Hall of Fame</a>
         <a href="index.html#submit" class="nav-link nav-link-cta">Submit Demo</a>
       </div>
+
       <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span class="ham-line"></span><span class="ham-line"></span><span class="ham-line"></span>
       </button>
@@ -69,17 +91,14 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <div class="mobile-nav-links">
-      <a href="contact.html" class="mobile-nav-link">Contact</a>
       <a href="hall-of-fame.html" class="mobile-nav-link">Hall of Fame</a>
+      <a href="articles.html" class="mobile-nav-link">Articles</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
       <a href="index.html#submit" class="mobile-nav-cta">Submit Demo</a>
     </div>
     <div class="mobile-channels-label">Channels</div>
     <div class="mobile-channels-grid">
       <a href="#">afterbeatsmusic</a><a href="#">USA</a><a href="#">UK</a>
-      <a href="#">Canada</a><a href="#">Brazil</a><a href="#">Australia</a>
-      <a href="#">K-Pop</a><a href="#">Lo-fi</a><a href="#">Trap</a>
-      <a href="#">Afrobeats</a><a href="#">R&amp;B</a><a href="#">Phonk</a>
-      <a href="#">Chill</a><a href="#">Rock</a><a href="#">Latin</a>
     </div>
   </div>
 
@@ -89,7 +108,10 @@
     <!-- ── Contact Hero (Video BG) ── -->
     <section class="contact-hero" style="padding-top: var(--nav-h);">
       <div class="contact-video-bg">
-        <div class="contact-video-sim"></div>
+        <!-- Swap the <source src> below to change the clip later -->
+        <video class="contact-hero-video" data-autoplay-bg-video muted loop playsinline preload="metadata" autoplay>
+          <source src="assets/videos/cont.mp4" type="video/mp4">
+        </video>
         <div class="contact-video-overlay"></div>
       </div>
       <div class="contact-hero-content">
@@ -108,7 +130,7 @@
           <div class="contact-tile-top">
             <div>
               <p class="contact-tile-label">Press &amp; Media</p>
-              <p class="contact-tile-value">contact@afterbeatsmusic.com</p>
+              <p class="contact-tile-value">admin@afterbeatsmusic.com</p>
             </div>
             <div class="contact-tile-icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -122,7 +144,7 @@
           <div class="contact-tile-top">
             <div>
               <p class="contact-tile-label">Demo Submissions &amp; Distribution</p>
-              <p class="contact-tile-value">contact@afterbeatsmusic.com</p>
+              <p class="contact-tile-value">admin@afterbeatsmusic.com</p>
             </div>
             <div class="contact-tile-icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16"/></svg>
@@ -188,9 +210,11 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="index.html" class="footer-logo">afterbeatsmusic</a>
+          <a href="index.html" class="footer-logo">
+            <img class="footer-logo-img" src="assets/logo/half.png" alt="After Beats" width="500" height="500" loading="lazy" decoding="async">
+          </a>
           <p class="footer-tagline">Late nights. Deep feels. Your sound.<br>The Internet, Worldwide.</p>
-          <a href="mailto:contact@afterbeatsmusic.com" class="footer-email">contact@afterbeatsmusic.com</a>
+          <a href="mailto:admin@afterbeatsmusic.com" class="footer-email">admin@afterbeatsmusic.com</a>
         </div>
         <div class="footer-cols">
           <div class="footer-col">
@@ -226,18 +250,10 @@
     </div>
   </footer>
 
-  <!-- Audio Control -->
-  <div class="audio-control" id="audioControl">
-    <button class="audio-btn" id="audioBtn" aria-label="Enable audio">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-      Enable Audio
-    </button>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
-  <script src="js/main.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>

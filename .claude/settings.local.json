@@ -7,7 +7,17 @@
       "Bash(curl -s https://7clouds.org/articles)",
       "Bash(curl -s https://7clouds.org/contact)",
       "WebFetch(domain:cdn.prod.website-files.com)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(start \"\" \"d:/PO/afterbeatsmusic/index.html\")",
+      "Bash(start \"\" \"d:/PO/afterbeatsmusic/contact.html\")",
+      "Bash(start \"\" \"d:/PO/afterbeatsmusic/hall-of-fame.html\")",
+      "Bash(where ffmpeg *)",
+      "Bash(ffmpeg -version)",
+      "Bash(where cwebp *)",
+      "Bash(cwebp -version)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(node --check js/main.js)"
     ]
   }
 }
