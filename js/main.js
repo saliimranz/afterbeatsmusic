@@ -45,6 +45,7 @@ function teardownPageResources() {
    1.  LENIS SMOOTH SCROLL
    ═══════════════════════════════════════════════════════════ */
 let lenis;
+let pendingNavigationHash = '';
 
 function initLenis() {
   if (typeof Lenis === 'undefined') return;
@@ -342,30 +343,20 @@ function initAvatarAnimations() {
   if (typeof gsap === 'undefined') return;
 
   qsa('[data-animate-employee-avatar]').forEach((av, i) => {
-    // Stagger entrance
     gsap.from(av, {
       opacity: 0,
       scale: 0.5,
       y: 20,
       duration: 0.55,
-      delay: i * 0.07,
+      delay: (i % 10) * 0.07,
       ease: 'back.out(1.5)',
-      immediateRender: false,   // ← KEY FIX: don't hide element before trigger
+      immediateRender: false,
+      clearProps: 'transform,opacity',
       scrollTrigger: {
         trigger: av,
         start: 'top 92%',
         once: true,
       },
-    });
-
-    // Gentle floating loop
-    gsap.to(av, {
-      y: -(4 + Math.random() * 5),
-      duration: 1.4 + Math.random() * 1.2,
-      ease: 'sine.inOut',
-      repeat: -1,
-      yoyo: true,
-      delay: Math.random() * 2,
     });
   });
 }
@@ -710,9 +701,7 @@ function initAutoplayBgVideos() {
     video.muted = true;
     video.setAttribute('muted', '');
     const tryPlay = () => { const p = video.play(); if (p && p.catch) p.catch(() => {}); };
-    tryPlay();
     const ab = registerAbort();
-    video.addEventListener('canplay', tryPlay, { once: true, signal: ab.signal });
 
     if (!('IntersectionObserver' in window)) return;
 
@@ -1208,30 +1197,67 @@ function initContactParallax() {
    ═══════════════════════════════════════════════════════════ */
 function initAnchorScroll() {
   const ab = registerAbort();
-  qsa('a[href^="#"]').forEach(link => {
+  const closeMobileMenu = () => {
+    const mobile = qs('#mobileMenu');
+    const toggle = qs('#navToggle');
+    if (mobile?.classList.contains('open')) {
+      mobile.classList.remove('open');
+      toggle?.classList.remove('open');
+      toggle?.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+  };
+
+  qsa('a[href*="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
-      const id     = link.getAttribute('href').slice(1);
-      const target = document.getElementById(id);
+      const hash = getHashFromUrl(link.getAttribute('href'));
+      if (!hash) return;
+
+      const linkUrl = new URL(link.getAttribute('href'), window.location.href);
+      const isSamePage = linkUrl.pathname === window.location.pathname;
+      if (!isSamePage) {
+        pendingNavigationHash = hash;
+        return;
+      }
+
+      const target = document.getElementById(hash.slice(1));
       if (!target) return;
+
       e.preventDefault();
-
-      if (lenis) {
-        lenis.scrollTo(target, { offset: -80, duration: 1.4 });
-      } else {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-
-      // Close mobile menu if open
-      const mobile = qs('#mobileMenu');
-      const toggle = qs('#navToggle');
-      if (mobile?.classList.contains('open')) {
-        mobile.classList.remove('open');
-        toggle?.classList.remove('open');
-        toggle?.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      }
+      scrollToHash(hash);
+      closeMobileMenu();
     }, { signal: ab.signal });
   });
+}
+
+function getHashFromUrl(url) {
+  if (!url) return '';
+  try {
+    return new URL(url, window.location.href).hash;
+  } catch (e) {
+    return url.startsWith('#') ? url : '';
+  }
+}
+
+function scrollToHash(hash, opts = {}) {
+  if (!hash) return false;
+  const target = document.getElementById(hash.replace(/^#/, ''));
+  if (!target) return false;
+
+  if (lenis) {
+    lenis.scrollTo(target, {
+      offset: -80,
+      duration: opts.immediate ? 0 : 1.4,
+      immediate: Boolean(opts.immediate),
+    });
+  } else if (opts.immediate) {
+    const top = target.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo(0, Math.max(0, top));
+  } else {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  return true;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -1264,10 +1290,20 @@ function initBarba() {
         // no stray callbacks firing during the swap.
         teardownPageResources();
       },
-      async enter() {
-        window.scrollTo(0, 0);
-        if (lenis) lenis.scrollTo(0, { immediate: true });
+      async enter(data) {
+        const hash = getHashFromUrl(data?.next?.url?.href || window.location.href) || pendingNavigationHash;
+        pendingNavigationHash = '';
+        if (!hash) {
+          window.scrollTo(0, 0);
+          if (lenis) lenis.scrollTo(0, { immediate: true });
+        }
         initPageScripts();
+        if (hash) {
+          requestAnimationFrame(() => {
+            scrollToHash(hash, { immediate: true });
+            setTimeout(() => scrollToHash(hash, { immediate: true }), 80);
+          });
+        }
         if (overlay) await gsap.to(overlay, { opacity: 0, duration: 0.4, ease: 'power2.out', delay: 0.05 });
       },
     }],
@@ -1344,6 +1380,12 @@ document.addEventListener('DOMContentLoaded', () => {
   initPageScripts();
   // Barba init after page scripts so initial page works without transitions too
   initBarba();
+  if (window.location.hash) {
+    requestAnimationFrame(() => {
+      scrollToHash(window.location.hash, { immediate: true });
+      setTimeout(() => scrollToHash(window.location.hash, { immediate: true }), 80);
+    });
+  }
 });
 
 /* ═══════════════════════════════════════════════════════════
