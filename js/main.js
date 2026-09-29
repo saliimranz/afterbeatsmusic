@@ -343,30 +343,20 @@ function initAvatarAnimations() {
   if (typeof gsap === 'undefined') return;
 
   qsa('[data-animate-employee-avatar]').forEach((av, i) => {
-    // Stagger entrance
     gsap.from(av, {
       opacity: 0,
       scale: 0.5,
       y: 20,
       duration: 0.55,
-      delay: i * 0.07,
+      delay: (i % 10) * 0.07,
       ease: 'back.out(1.5)',
-      immediateRender: false,   // ← KEY FIX: don't hide element before trigger
+      immediateRender: false,
+      clearProps: 'transform,opacity',
       scrollTrigger: {
         trigger: av,
         start: 'top 92%',
         once: true,
       },
-    });
-
-    // Gentle floating loop
-    gsap.to(av, {
-      y: -(4 + Math.random() * 5),
-      duration: 1.4 + Math.random() * 1.2,
-      ease: 'sine.inOut',
-      repeat: -1,
-      yoyo: true,
-      delay: Math.random() * 2,
     });
   });
 }
@@ -711,9 +701,7 @@ function initAutoplayBgVideos() {
     video.muted = true;
     video.setAttribute('muted', '');
     const tryPlay = () => { const p = video.play(); if (p && p.catch) p.catch(() => {}); };
-    tryPlay();
     const ab = registerAbort();
-    video.addEventListener('canplay', tryPlay, { once: true, signal: ab.signal });
 
     if (!('IntersectionObserver' in window)) return;
 

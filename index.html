@@ -34,8 +34,6 @@
   <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
-  <link rel="preload" as="video" href="assets/videos/hero.mp4" type="video/mp4">
-
   <link rel="stylesheet" href="css/style.css" />
 
   <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -117,10 +115,9 @@
       <!-- Video background -->
       <div class="hero-video-bg" id="heroVideoBg">
         <video id="heroVideo" autoplay muted loop playsinline preload="metadata">
-          <source src="assets/videos/hero.mp4" type="video/mp4">
+          <source src="assets/videos/opt/hero.mp4" type="video/mp4">
         </video>
         <div class="hero-video-overlay" aria-hidden="true"></div>
-        <div class="hero-video-grain" aria-hidden="true"></div>
       </div>
 
       <!-- Centered content -->
@@ -237,8 +234,8 @@
             <img src="assets/5Pics/1 (5).jpg" alt="Katy Perry — Wide Awake" loading="lazy" decoding="async">
           </figure>
           <figure class="sc-item sc-video">
-            <video muted loop playsinline preload="metadata" data-offset="2">
-              <source src="images/9757086-uhd_3840_2160_24fps.mp4" type="video/mp4">
+            <video muted loop playsinline preload="none" data-offset="2">
+              <source src="assets/videos/opt/clip-card.mp4" type="video/mp4">
             </video>
           </figure>
           <figure class="sc-item">
@@ -248,8 +245,8 @@
             <img src="assets/5Pics/1 (9).jpg" alt="The Chainsmokers — Closer" loading="lazy" decoding="async">
           </figure>
           <figure class="sc-item sc-video">
-            <video muted loop playsinline preload="metadata" data-offset="14">
-              <source src="assets/videos/cont.mp4" type="video/mp4">
+            <video muted loop playsinline preload="none" data-offset="3">
+              <source src="assets/videos/opt/cont.mp4" type="video/mp4">
             </video>
           </figure>
           <figure class="sc-item">
@@ -261,8 +258,8 @@
             <img src="assets/5Pics/1 (5).jpg" alt="" loading="lazy" decoding="async">
           </figure>
           <figure class="sc-item sc-video" aria-hidden="true">
-            <video muted loop playsinline preload="metadata" data-offset="2">
-              <source src="images/9757086-uhd_3840_2160_24fps.mp4" type="video/mp4">
+            <video muted loop playsinline preload="none" data-offset="2">
+              <source src="assets/videos/opt/clip-card.mp4" type="video/mp4">
             </video>
           </figure>
           <figure class="sc-item" aria-hidden="true">
@@ -272,8 +269,8 @@
             <img src="assets/5Pics/1 (9).jpg" alt="" loading="lazy" decoding="async">
           </figure>
           <figure class="sc-item sc-video" aria-hidden="true">
-            <video muted loop playsinline preload="metadata" data-offset="14">
-              <source src="assets/videos/cont.mp4" type="video/mp4">
+            <video muted loop playsinline preload="none" data-offset="3">
+              <source src="assets/videos/opt/cont.mp4" type="video/mp4">
             </video>
           </figure>
           <figure class="sc-item" aria-hidden="true">
@@ -314,8 +311,8 @@
 
         <!-- Phase 2: video that zooms from a tiny center card to fullscreen -->
         <div class="story-video" data-story-video>
-          <video id="storyVideo" muted loop playsinline preload="metadata" data-offset="6">
-            <source src="assets/videos/13yo.mp4" type="video/mp4">
+          <video id="storyVideo" muted loop playsinline preload="none" poster="assets/videos/opt/13yo-poster.jpg" data-offset="6">
+            <source src="assets/videos/opt/13yo.mp4" type="video/mp4">
           </video>
           <div class="story-video-vignette" aria-hidden="true"></div>
         </div>
@@ -542,8 +539,8 @@
 
       <!-- Video background — swap the <source src> to change the clip -->
       <div class="final-cta-bg" aria-hidden="true">
-        <video id="finalCtaVideo" muted loop playsinline preload="metadata" autoplay>
-          <source src="images/9757086-uhd_3840_2160_24fps.mp4" type="video/mp4">
+        <video id="finalCtaVideo" muted loop playsinline preload="none" poster="assets/videos/opt/clip-cta-poster.jpg">
+          <source src="assets/videos/opt/clip-cta.mp4" type="video/mp4">
         </video>
         <div class="final-cta-overlay"></div>
       </div>

@@ -460,7 +460,6 @@ ul, ol { list-style: none; }
   height: 100%;
   object-fit: cover;
   object-position: center;
-  animation: heroKenBurns 26s ease-in-out infinite alternate;
 }
 @keyframes heroKenBurns {
   from { transform: scale(1.04) translateY(0); }
@@ -854,7 +853,6 @@ ul, ol { list-style: none; }
   transition: transform 0.35s var(--ease-out),
               box-shadow 0.35s var(--ease-out);
   cursor: default;
-  will-change: transform;
 }
 .mt-avatar:first-child { margin-left: 0; }
 .mt-avatar:hover {
@@ -1816,15 +1814,15 @@ ul, ol { list-style: none; }
   color: transparent;
   text-shadow: none;
 }
-.ta-1 { background-image: url('../assets/team/1.jpg'); background-color: #0d1a3d; }
-.ta-2 { background-image: url('../assets/team/2.jpg'); background-color: #1a0a2e; }
-.ta-3 { background-image: url('../assets/team/3.jpg'); background-color: #0a1a0d; }
-.ta-4 { background-image: url('../assets/team/4.avif'); background-color: #1a0d00; }
-.ta-5 { background-image: url('../assets/team/5.jpg'); background-color: #0d1a1a; }
-.ta-6 { background-image: url('../assets/team/6.jpg'); background-color: #1a001a; }
-.ta-7 { background-image: url('../assets/team/7.jpg'); background-color: #00141a; }
-.ta-8 { background-image: url('../assets/team/8.jpg'); background-color: #0d0d1a; }
-.ta-9 { background-image: url('../assets/team/9.jpg'); background-color: #1a0a0a; }
+.ta-1 { background-image: url('../assets/team/opt/1.jpg'); background-color: #0d1a3d; }
+.ta-2 { background-image: url('../assets/team/opt/2.jpg'); background-color: #1a0a2e; }
+.ta-3 { background-image: url('../assets/team/opt/3.jpg'); background-color: #0a1a0d; }
+.ta-4 { background-image: url('../assets/team/opt/4.jpg'); background-color: #1a0d00; }
+.ta-5 { background-image: url('../assets/team/opt/5.jpg'); background-color: #0d1a1a; }
+.ta-6 { background-image: url('../assets/team/opt/6.jpg'); background-color: #1a001a; }
+.ta-7 { background-image: url('../assets/team/opt/7.jpg'); background-color: #00141a; }
+.ta-8 { background-image: url('../assets/team/opt/8.jpg'); background-color: #0d0d1a; }
+.ta-9 { background-image: url('../assets/team/opt/9.jpg'); background-color: #1a0a0a; }
 
 /* Sound wave — sits centered below the avatars */
 .sound-wave {
@@ -2035,8 +2033,6 @@ ul, ol { list-style: none; }
   object-fit: cover;
   object-position: center;
   opacity: 0.85;
-  /* Slow ken-burns so a paused/looping clip still feels alive */
-  animation: contactHeroZoom 26s ease-in-out infinite alternate;
 }
 @keyframes contactHeroZoom {
   from { transform: scale(1.04) translateY(0); }
@@ -2719,8 +2715,6 @@ ul, ol { list-style: none; }
   height: 100%;
   object-fit: cover;
   object-position: center;
-  /* Slow ken-burns so the still-shot feels alive even when paused */
-  animation: finalCtaZoom 28s ease-in-out infinite alternate;
 }
 @keyframes finalCtaZoom {
   from { transform: scale(1.02); }
